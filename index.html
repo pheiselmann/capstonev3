@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" name="description" content="Capstone project for Thinkful web dev course - interactive movie search app using TasteDive API">
+  <meta name="viewport" content="width=device-width">
+  <title>Interactive Movie Search using TasteDive API</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+  <main role="main">
+    <div class="start-page row" style="display: none;">
+      <div class="col-12">
+        <img class="star" src="images/gold_star.png">
+        <img class="star2" src="images/gold_star.png">
+        <img class="star3" src="images/gold_star.png">
+        <img class="star4" src="images/gold_star.png">
+        <img class="star5" src="images/gold_star.png">
+        <img class="ticket" src="images/ticket.png">
+        <h1>Movie Suggestion App</h1>
+        <p>This app provides an interactive movie search experience.</p>
+        <p><em>Start by entering the title of a movie you like below.</em></p>
+        <form action="#" class="js-search-form" id="search">
+          <label for="query"></label>
+          <input type="text" class="query" placeholder="full metal jacket">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="error-page row" style="display: none;">
+      <div class="col-12">
+        <img class="star" src="images/gold_star.png">
+        <img class="star2" src="images/gold_star.png">
+        <img class="star3" src="images/gold_star.png">
+        <img class="star4" src="images/gold_star.png">
+        <img class="star5" src="images/gold_star.png">
+        <img class="ticket" src="images/ticket.png">
+        <h1>Movie Suggestion App</h1>
+        <p>This app provides an interactive movie search experience.</p>
+        <p><em>Start by entering the title of a movie you like below.</em></p>
+        <p class="error-msg">I do not recognize that movie name.  Please try again.</p>
+        <form name= "search-again" form action="#" class="search-again" id="search-again">
+          <label for="query"></label>
+          <input type="text" class="query" placeholder="full metal jacket">
+          <button type="submit">Search</button>
+        </form>
+     </div>
+    </div>
+
+     <div class="genre-page row" style="display: none;">
+       <div class="col-12">
+        <img class="star" src="images/gold_star.png">
+        <img class="star2" src="images/gold_star.png">
+        <img class="star3" src="images/gold_star.png">
+        <img class="star4" src="images/gold_star.png">
+        <img class="star5" src="images/gold_star.png">
+        <img class="genre-image" src="images/genre2.jpg">
+        <div class="genre-text"></div>
+        <form name="genre-choices">
+          <ul class="choices"></ul>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="director-page row" style="display: none;">
+      <div class="col-12">
+        <img class="star" src="images/gold_star.png">
+        <img class="star2" src="images/gold_star.png">
+        <img class="star3" src="images/gold_star.png">
+        <img class="star4" src="images/gold_star.png">
+        <img class="star5" src="images/gold_star.png">
+        <img class="projector" src="images/projector1.jpg">
+        <div class="director-text"></div>
+        <form name="director-choices">
+          <ul class="choices"></ul>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="star-page row" style="display: none;">
+      <div class="col-12">
+        <img class="star" src="images/gold_star.png">
+        <img class="star2" src="images/gold_star.png">
+        <img class="star3" src="images/gold_star.png">
+        <img class="star4" src="images/gold_star.png">
+        <img class="star5" src="images/gold_star.png">
+        <img class="star-image" src="images/actor_faces.jpg">
+        <div class="star-text"></div>
+        <form name="star-choices">
+          <ul class="choices"></ul>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+      
+    <div class="final-page row" style="display: none;">
+      <img class="star" src="images/gold_star.png">
+        <img class="star2" src="images/gold_star.png">
+        <img class="star3" src="images/gold_star.png">
+        <img class="star4" src="images/gold_star.png">
+        <img class="star5" src="images/gold_star.png">
+      <h1>Movie Suggestions</h1>
+      <p class="results-text"></p>
+
+      <div class="col-4">
+        <div class="results-trailer1 trailer"></div>
+        <div class="trailer1-link link"></div>
+      </div>
+
+      <div class="col-4">
+        <div class="results-trailer2 trailer"></div>
+        <div class="trailer2-link link"></div>
+      </div>
+
+      <div class="col-4">
+        <div class="results-trailer3 trailer"></div>
+        <div class="trailer3-link link"></div>
+      </div>
+      
+      <div class="row">
+        <div class="restart col-12">
+          <button class="restart-game">Search Again</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

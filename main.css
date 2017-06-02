@@ -1,0 +1,269 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+html {
+  background: url("images/cinema_big3.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+main {
+  position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 60px;
+	padding-top: 90px;
+  background-image: url("images/light_film.jpg");
+  border-radius: 25px;
+}
+
+.genre-text, .director-text, .star-text {
+  padding-top: 30px;
+}
+
+.star, .star2, .star3, .star4, .star5 {
+  position: absolute;
+  top: 40px;
+}
+
+.star {
+  left: 90px;
+}
+
+.star2 {
+  left: 140px;
+}
+
+.star3 {
+  left: 190px;
+}
+
+.star4 {
+  left: 240px;
+}
+
+.star5 {
+  left: 290px;
+}
+
+.projector {
+  position: absolute;
+  left: 610px;
+  top: 65px;
+  border-radius: 25px;
+}
+
+.ticket {
+  position: absolute;
+  left: 610px;
+  top: 85px;
+}
+
+.genre-image {
+  position: absolute;
+  left: 810px;
+  top: 40px;
+  border-radius: 25px;
+}
+
+.star-image {
+  position: absolute;
+  left: 660px;
+  top: 65px;
+  border-radius: 25px;
+}
+
+.choices {
+  max-width: 800px;
+}
+
+p {
+	max-width: 1000px;
+}
+
+p, span {
+  font-size: 18px;
+}
+
+button:hover, .link:hover, .trailer:hover {
+	cursor: pointer;
+
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.placeholder {
+  font-weight: bolder;
+}
+
+button {
+	/*margin-top: 30px;*/
+	font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-left: -20px;
+}
+
+.restart-game {
+  position: relative;
+  left: 0px;
+  margin-left: 0px;
+	margin-top: 60px;
+}
+
+.results-text {
+  margin-bottom: 20px;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+.trailer {
+  border: 1px solid #E5E5E5;
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+.link {
+	/*padding: 20px;*/
+	text-align: center;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+	color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.error-msg {
+	color: lavender;
+}
+
+.movie-image {
+	width: 100%;
+}
+
+.radio{
+  color:black;
+  font-size:18px;
+  position:relative;
+}
+
+.radio label{
+  position:relative;
+   padding-left:20px;
+}
+
+.radio label:after{
+  content:'';
+  width:15px;
+  height:15px;
+  border:3px solid;
+  position:absolute;
+  left:0;
+  top:1px;
+  border-radius:100%;
+  -ms-border-radius:100%;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+.radio input[type="radio"]{
+  cursor: pointer; 
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index: 1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+
+.radio input[type="radio"]:checked + label{
+  color:white;  
+}
+
+.radio input[type="radio"]:checked + label:before{
+  content:'';
+  width:5px;
+  height:5px;
+  position:absolute;
+  background:#0B8;
+  left:10px;
+  top:6px;
+  border-radius:100%;
+  -ms-border-radius:100%;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+}
+
+.row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-3, .col-4, .col-6, .col-12 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+.col-3, .col-4, .col-6, .col-12 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.333333%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
+
+
