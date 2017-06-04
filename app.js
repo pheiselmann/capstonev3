@@ -171,11 +171,11 @@ function updatePicks(randomPick, words, pickType) {
 
 function randomPickOk(randomPick, words, pickType) {
   if (pickType === "genrePicks") {
-    return (words.length < 11 && !randomPick.name.match(/^[a-z]/ || /[a-z][a-z][.]/ || /,/) && notInPicksArray(randomPick, pickType));
+    return (words.length < 11 && !randomPick.name.match(/^[a-z]/ || /[a-z][a-z]./ || /,/) && notInPicksArray(randomPick, pickType));
   } else if (pickType === "directorPicks") {
-    return (words.length > 1 && words.length < 5 && !randomPick.name.match(/^[a-z]/ || /[a-z][a-z][.]/ || /,/) && notInPicksArray(randomPick, pickType) && state.resultsMinusGPickIndices[randomPick.index]);
+    return (words.length > 1 && words.length < 5 && !randomPick.name.match(/^[a-z]/ || /[a-z][a-z]./ || /,/) && notInPicksArray(randomPick, pickType) && state.resultsMinusGPickIndices[randomPick.index]);
   } else if (pickType === "starPicks") {
-    return (words.length < 4 && !randomPick.name.match(/^[a-z]/ || /[a-z][a-z][.]/ || /,/ || /&/ || /\"/) && notInPicksArray(randomPick, pickType) && state.resultsMinusGDPickIndices[randomPick.index]);
+    return (words.length < 4 && !randomPick.name.match(/^[a-z]/ || /[a-z][a-z]./ || /,/ || /&/ || /\"/) && notInPicksArray(randomPick, pickType) && state.resultsMinusGDPickIndices[randomPick.index]);
   }
 }
 
